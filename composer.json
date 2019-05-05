@@ -20,13 +20,13 @@
         "block8/php-docblock-checker": "~1.10"
     },
     "support": {
-      "issues": "https://github.com/pointybeard/helpers-statistics-slidingaverage/issues",
-      "wiki": "https://github.com/pointybeard/helpers-statistics-slidingaverage/wiki"
+        "issues": "https://github.com/pointybeard/helpers-statistics-slidingaverage/issues",
+        "wiki": "https://github.com/pointybeard/helpers-statistics-slidingaverage/wiki"
     },
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "pointybeard\\Helpers\\Statistics": "src/"
+            "pointybeard\\Helpers\\Statistics\\": "src/"
         }
     }
 }
