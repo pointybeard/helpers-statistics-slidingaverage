@@ -1,6 +1,6 @@
 # PHP Helpers: Sliding Average
 
--   Version: v1.0.0
+-   Version: v1.0.1
 -   Date: May 05 2019
 -   [Release notes](https://github.com/pointybeard/helpers-statistics-slidingaverage/blob/master/CHANGELOG.md)
 -   [GitHub repository](https://github.com/pointybeard/helpers-statistics-slidingaverage)

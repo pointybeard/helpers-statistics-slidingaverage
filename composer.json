@@ -1,6 +1,6 @@
 {
     "name": "pointybeard/helpers-statistics-slidingaverage",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Ring buffer for calculating average of a changing set; helps to reduce jitter.",
     "homepage": "https://github.com/pointybeard/helpers-statistics-slidingaverage",
     "license": "MIT",
