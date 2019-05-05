@@ -1,6 +1,6 @@
 # PHP Helpers: Sliding Average
 
--   Version: v1.0.1
+-   Version: v1.0.2
 -   Date: May 05 2019
 -   [Release notes](https://github.com/pointybeard/helpers-statistics-slidingaverage/blob/master/CHANGELOG.md)
 -   [GitHub repository](https://github.com/pointybeard/helpers-statistics-slidingaverage)
@@ -24,20 +24,29 @@ To include all the [PHP Helpers](https://github.com/pointybeard/helpers) package
 
 ## Usage
 
+Simple example of how to use the SlidingAverage class:
+
 ```php
 <?php
+
+include __DIR__ . "/vendor/autoload.php";
+
 use pointybeard\Helpers\Statistics\SlidingAverage;
 
 $average = new SlidingAverage\SlidingAverage(20, 0);
 
-$running = true;
-
 do {
-    //.. do some work ..
+
+    // Do some work here
+    $value = rand(0, 100);
+
+    // Push some value into the ring buffer, e.g. time elapsed etc
     $average->push($value);
 
-    print "Average is: " . $average->sample();
-} while ($running == true);
+    echo "\rAverage is: " . $average->sample();
+    usleep(70000);
+
+} while(true);
 ```
 
 ## Support
